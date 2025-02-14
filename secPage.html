@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sec.css">
+    <title>Cutie</title>
+    <h1 id="mainHead">Will you be my Valentine?</h1>
+    <div class="button-container">
+        <a href="thirdPage.html">
+            <button id="yea">Yes</button>
+        </a>
+        <button id="nawr">No</button>
+    </div>
+    
+
+    <div class="snoop-container">
+        <div id="snoop" class="tenor-gif-embed" data-postid="12442350435605263330" data-share-method="host" data-aspect-ratio="0.682731" data-width="100%"></div> 
+    </div>
+
+    <h3 style="transform: rotate(-45deg); font-size: 50px; position: absolute; top:30%">please??</h3>
+    <h3 style="transform: rotate(45deg); font-size: 50px; position: absolute; right: 10%; top:40%">yessss??</h3>
+    <h3 style="transform: rotate(20deg); font-size: 50px; position: absolute; left: 5%; top:60%">do NOT click no..</h3>
+
+    <script type="text/javascript" src="https://tenor.com/embed.js"></script>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+        const buttonWidth = 85;
+        const buttonHeight = 40;
+
+        const maxWidth = window.innerWidth - buttonWidth;
+        const maxHeight = window.innerHeight - buttonHeight;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('nawr');
+            button.addEventListener('click', () => {
+                button.style.position = 'absolute';
+                button.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+                button.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+            });
+        });
+    </script>
+</body>
+</html>

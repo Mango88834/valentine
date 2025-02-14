@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Card</title>
+    <link rel="stylesheet" href="val.css">
+</head>
+<body>
+    <div class="container">
+        <div class="valentines">
+            <div class="envelope">
+                <div class="card">
+                    <div class="text">
+                        Happy <br> Valentines's <br> Day
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+            <div class="front">
+            </div>
+        </div>
+    </div>
+
+    <h2 class="sideWords" style="position: absolute; top: 10%; left: 10%; transform: rotate(23deg); color: blanchedalmond;">
+        i love youuuu 
+    </h2>
+    <h2 class="sideWords" style="position: absolute; top: 10%; left: 35%; transform: rotate(-38deg); color: purple;">
+        MWAHHHHH 
+    </h2>
+    <h2 class="sideWords" style="position: absolute; top: 45%; left: 12%; transform: rotate(27deg); color: pink; outline: 10px ; outline-color: black;">
+        YYIPPEEE      
+    <h2 class="sideWords" style="position: absolute; top: 67%; left: 8%; transform: rotate(-27deg); color: azure;">
+        CUTIE PATOOTIE    
+    </h2> 
+    <h2 class="sideWords" style="position: absolute; top: 7%; left: 55%; transform: rotate(45deg); color: rgb(232, 39, 116);">
+        the BEST girlfriend
+    </h2> 
+    <a href="index.html">
+        <h2 class="sideWords" style="position: absolute; bottom: 10%; left: 35%; color: rgb(106, 25, 76);">
+            BOOOOOTTTTYYYYYYYYYYY
+        </h2> 
+    </a>
+    
+    <div id="one" class="tenor-gif-embed" data-postid="8923882899145944591" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/quby-hyper-crazy-dance-happy-excited-gif-8923882899145944591">Quby Hyper Sticker</a>from <a href="https://tenor.com/search/quby-stickers">Quby Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div id="two" class="tenor-gif-embed" data-postid="25031041" data-share-method="host" data-aspect-ratio="1.28514" data-width="100%"><a href="https://tenor.com/view/hhgf-gif-25031041">Hhgf GIF</a>from <a href="https://tenor.com/search/hhgf-gifs">Hhgf GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+
+<style>
+    #one{
+        top: -40px;  
+        left: 700px;  
+    }
+    #two{
+        top: 245px;  
+        left: 320px;
+          
+    }
+    .sideWords{
+        font-family: cursive;
+        font-size: 30px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    } 
+
+    .tenor-gif-embed{
+        max-width: 250px; 
+        position: absolute; 
+
+        margin: 5px;  
+    }
+
+
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+    function startConfetti() {
+        const defaults = {
+            spread: 360,
+            ticks: 100,
+            gravity: 0,
+            decay: 0.94,
+            startVelocity: 30,
+            shapes: ["heart"],
+            colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+        };
+
+        confetti({
+            ...defaults,
+            particleCount: 50,
+            scalar: 2,
+        });
+
+        confetti({
+            ...defaults,
+            particleCount: 25,
+            scalar: 3,
+        });
+
+        confetti({
+            ...defaults,
+            particleCount: 10,
+            scalar: 4,
+        });
+    }
+
+    setInterval(startConfetti, 1500) 
+</script>
+</body>
+</html> 

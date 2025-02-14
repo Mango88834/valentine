@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="thirdpage.css">
+    <title>Cutie</title>
+    <h1 id="mainHead">Will you be my Valentine?</h1>
+    <div class="button-container">
+        <a href="val.html">
+            <button id="yea">ACTUALLYY???</button>
+        </a>
+        
+        <a href="secPage.html">
+            <button onclick="" id="nawr">No</button>
+        </a>
+        
+    </div>
+    
+
+    <div class="really-container">
+        <div class="tenor-gif-embed" data-postid="8931120863197414015" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/shocked-face-wide-eyes-bug-eyes-shocked-surprised-gif-8931120863197414015">Shocked Face Wide Eyes GIF</a>from <a href="https://tenor.com/search/shocked+face-gifs">Shocked Face GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+        const buttonWidth = 85;
+        const buttonHeight = 40;
+
+        const maxWidth = window.innerWidth - buttonWidth;
+        const maxHeight = window.innerHeight - buttonHeight;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('nawr');
+            button.addEventListener('click', () => {
+                button.style.position = 'absolute';
+                button.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+                button.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+            });
+        });
+    </script>
+</body>
+</html>
